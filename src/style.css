@@ -12,3 +12,9 @@ p {
 .dial:hover {
   background-color: rgb(251, 251, 251);
 }
+
+.digit-input{
+  border-left: none;
+    border-top: none;
+    border-right: none;
+}

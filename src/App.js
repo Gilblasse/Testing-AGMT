@@ -1,7 +1,7 @@
 import React from 'react';
 import UserAvatar from './UserAvatar';
 import { user } from './data';
-import { Avatar, Row, Col } from 'antd';
+import { Avatar, Row, Col, Input } from 'antd';
 
 // import './style.css';
 const phoneNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
@@ -26,6 +26,33 @@ export default function App() {
         >
           {user.name}
         </p>
+      </div>
+
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          marginBottom: 35
+        }}
+      >
+        <p>Please Enter Your 4 Digit Pin</p>
+        <Input.Group size="large">
+          <Row gutter={30} justify="center">
+            <Col span={2}>
+              <Input defaultValue="" className="digit-input" />
+            </Col>
+            <Col span={2}>
+              <Input defaultValue="" className="digit-input" />
+            </Col>
+            <Col span={2}>
+              <Input defaultValue="" className="digit-input" />
+            </Col>
+            <Col span={2}>
+              <Input defaultValue="" className="digit-input" />
+            </Col>
+          </Row>
+        </Input.Group>
       </div>
 
       <Row gutter={[40, 35]} style={{ width: 400 }} justify="center">
