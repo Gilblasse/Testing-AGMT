@@ -18,7 +18,7 @@ export default function App() {
 
       <Row gutter={[20, 20]} style={{ width: 250 }} justify="center">
         {phoneNums.map(num => (
-          <Col>
+          <Col key={num}>
             <Avatar
               size={43}
               onClick={handleClick}
