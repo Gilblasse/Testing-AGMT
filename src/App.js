@@ -72,8 +72,8 @@ export default function App() {
       >
         <p>Please Enter Your 4 Digit Pin</p>
         <Input.Group size="large">
-          <Row gutter={30} justify="center">
-            <Col span={2}>
+          <Row gutter={30} justify="center" style={{ width: '390px' }}>
+            <Col span={6}>
               <Input
                 defaultValue=""
                 className="digit-input"
@@ -81,7 +81,7 @@ export default function App() {
                 disabled
               />
             </Col>
-            <Col span={2}>
+            <Col span={6}>
               <Input
                 defaultValue=""
                 className="digit-input"
@@ -89,7 +89,7 @@ export default function App() {
                 disabled
               />
             </Col>
-            <Col span={2}>
+            <Col span={6}>
               <Input
                 defaultValue=""
                 className="digit-input"
@@ -97,7 +97,7 @@ export default function App() {
                 disabled
               />
             </Col>
-            <Col span={2}>
+            <Col span={6}>
               <Input
                 defaultValue=""
                 className="digit-input"
@@ -153,28 +153,6 @@ export default function App() {
           </Col>
         </Row>
       </Row>
-
-      {/* <Row>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          style={{
-            height: '3.2rem',
-            width: '3.2rem',
-            color: 'rgb(221, 221, 221)'
-          }}
-          class="h-6 w-6"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="1"
-            d="M12 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2M3 12l6.414 6.414a2 2 0 001.414.586H19a2 2 0 002-2V7a2 2 0 00-2-2h-8.172a2 2 0 00-1.414.586L3 12z"
-          />
-        </svg>
-      </Row> */}
     </div>
   );
 }
