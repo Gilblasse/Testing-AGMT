@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import UserAvatar from './UserAvatar';
 import { user } from './data';
 import { Avatar, Row, Col, Input } from 'antd';
+import './style.css';
 
-// import './style.css';
 const phoneNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
 
 export default function App() {
