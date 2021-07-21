@@ -34,10 +34,9 @@ export default function App() {
   };
 
   const addPinToInput = () => {
-    const recentPin = pin[pin.length - 1];
-    const idx = pin.indexOf(recentPin);
-
-    if (idx >= 0) {
+    const idx = pin.length - 1;
+    const recentPin = pin[idx];
+    if (idx <= 3 && idx > -1) {
       inputs[idx].set(recentPin);
     }
   };
