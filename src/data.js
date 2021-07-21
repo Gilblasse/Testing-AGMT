@@ -1,4 +1,4 @@
 export const user = {
-  name: 'Daniel Uber',
+  name: 'Gerald Defino',
   userImgUrl: null
 };
